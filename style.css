@@ -1,0 +1,124 @@
+body {
+    background: #1b2430;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#newTask {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#newTask input {
+    width: 70%;
+    height: 45px;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    color: #111;
+    position: relative;
+}
+
+#newTask input:focus {
+    outline: none;
+    border-color: #8052ec;
+}
+
+#newTask button {
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #8052ec;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+#newTask button:hover {
+    background-color: transparent;
+    color: #8052ec;
+    border: 1px solid #8052ec;
+}
+
+#tasks {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
+}
+
+.task {
+    background-color: #fff;
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+}
+
+.task span {
+    font-size: 15px;
+}
+
+.task button {
+    background-color: #c70000;
+    color: #fff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s linear;
+}
+
+.task button:hover {
+    background-color: transparent;
+    color: #c70000;
+    border: 1px solid #c70000;
+}
+
+.completed {
+    text-decoration: line-through;
+}
